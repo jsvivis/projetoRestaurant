@@ -18,6 +18,10 @@ import { Link, NavLink } from "react-router-dom";
             document.body.classList.remove('active-modal');
         }
 
+        const toogleModal = ()=> {
+                setModal(!modal);
+}
+
         const handleFormSubmit = ()=> {
 
         }
@@ -53,20 +57,21 @@ import { Link, NavLink } from "react-router-dom";
 
                     <form onSubmit={handleFormSubmit}>
                         <input className="" type="email" required placeholder="Seu Email" />
-                        <label htmlFor=""></label>
+                        
+                        <span>
+                            <p>
+                                <input type="checkbox" id="same" required className="in" />
+                                <label htmlFor="same">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, alias eum? Impedit laudantium voluptates deserunt reprehenderit, non quam harum illo.</label>
+                            </p>
 
+                        </span>
+                        <button className="btn-pr" type="submit"> Assine </button>
                     </form>
+                    <button className="close-modal" onClick={toogleModal}></button>
 
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-        
 
         </>
         );
