@@ -56,6 +56,7 @@ import { Link, NavLink } from "react-router-dom";
                     <p>Assinatura Gratuita, assine e ganhe 20% OFF no primeiro consumo</p>
 
                     <form onSubmit={handleFormSubmit}>
+
                         <input className="" type="email" required placeholder="Seu Email" />
                         
                         <span>
@@ -63,6 +64,15 @@ import { Link, NavLink } from "react-router-dom";
                                 <input type="checkbox" id="same" required className="in" />
                                 <label htmlFor="same">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, alias eum? Impedit laudantium voluptates deserunt reprehenderit, non quam harum illo.</label>
                             </p>
+
+                        <input 
+                        className="" 
+                        type="email" 
+                        required 
+                        placeholder="Seu Email" 
+                        />
+                        
+                        <label htmlFor=""></label>
 
                         </span>
                         <button className="btn-pr" type="submit"> Assine </button>
