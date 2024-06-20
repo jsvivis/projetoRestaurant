@@ -1,5 +1,6 @@
 import  { useState } from "react"
 import { Link, NavLink } from "react-router-dom";
+import './navbar.css'
 
 
     // <div>Navbar</div>
@@ -31,7 +32,7 @@ import { Link, NavLink } from "react-router-dom";
                 <input type="button" id="click" checked={menuopen} onChange={()=> setMenuOpen}/>
                 <label htmlFor="click" className="menu-btn">
                    <i className="fa fa-bars"></i>
-                   <div id="logo">     
+                   <div className="logo">     
                     <Link to='/' className='navbar-brand'><h1>Restaurant</h1></Link>
                    </div>
                 </label>
@@ -43,14 +44,17 @@ import { Link, NavLink } from "react-router-dom";
                     <li><NavLink to='/team' onClick={handleMenuItemClick}>Equipe</NavLink></li>
                     <li><NavLink to='/contact' onClick={handleMenuItemClick}>Contato</NavLink></li>
                 </ul>
+
+                <div>
+                    <button onClick={toogleModal} className="btn btn-signup hide"> Assinar </button>
+                </div>
+
             </nav>
-
-
-            <div className="">
-                <div className="">    <div>
-                    <div className=""> </div>
-                    <h2 className="">Restaurant Boca Aberta</h2>
-                    <p className="">Restaurant</p>
+            <div className="modal">
+                <div className="overlay"></div>               
+                    <div className="modal-content"> 
+                    <h2 className="h1-1">Restaurant Boca Aberta</h2>
+                    <p className="p-1-1">Restaurant</p>
                     <h2>Assine nossa Nesletter</h2>
 
                     <p>Assinatura Gratuita, assine e ganhe 20% OFF no primeiro consumo</p>
@@ -81,7 +85,7 @@ import { Link, NavLink } from "react-router-dom";
 
                     </div>
                 </div>
-            </div>
+            
 
         </>
         );

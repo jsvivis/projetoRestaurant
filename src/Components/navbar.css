@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+   padding-top: 80px;
+}
+
+nav{
+    display:flex;
+    height: 80px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    align-items: center;
+    justify-content: space-between;
+   /* padding: 0 50px 0 100px;*/
+    z-index: 100;
+}
+
+.btn-signup{
+    padding: 6px;
+    width: 100%;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+/*nav .logo{
+    color: #000;
+
+}*/
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+nav ul li{
+    margin: 0 10px;
+    cursor: pointer;
+    position: relative;
+    /*z-index: 10000;*/
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0;
+    /*margin-top: 10px;*/
+    border-radius: 5px;
+    letter-spacing: 1px;
+    position: relative;
+ }
+ 
+ nav ul li a:hover{
+    color: rgb(64, 0, 128) !important;
+    /*transition: 0.5s;*/
+ }
+
+ nav ul li .active::before{
+    content: " ";
+    position: absolute;
+    top: 40;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(146, 52, 240);
+    /*transform: scaleX(0);*/
+    transition: width 0.5s ease;
+    bottom: 0;
+ }
+
+ nav ul li:hover .active::before{
+    width: 0%;
+ }
+
+ input[type=button]{
+    display:none;
+ }
